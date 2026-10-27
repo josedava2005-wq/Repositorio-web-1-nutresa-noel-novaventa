@@ -16,22 +16,27 @@
 
   window.filtrosRestriccionServicio = {
     async listarRecetas() {
-      const respuesta = await fetch(config.baseUrl + config.ruta);
-      if (!respuesta.ok) {
-        throw new Error("Error en API de recetas: " + respuesta.status);
+      try {
+        const respuesta = await fetch(config.baseUrl + config.ruta);
+        if (!respuesta.ok) {
+          throw new Error("Error en API de recetas: " + respuesta.status);
+        }
+
+        const recetas = await respuesta.json();
+
+        return recetas.map(function (receta) {
+          return {
+            id: receta.id,
+            nombreReceta: receta.nombreReceta,
+            restricciones: receta.restricciones.split(","),
+            minutos: receta.minutos,
+            porciones: receta.porciones
+          };
+        });
+      } catch (error) {
+        console.error("filtrosRestriccionServicio.listarRecetas:", error);
+        throw error;
       }
-
-      const recetas = await respuesta.json();
-
-      return recetas.map(function (receta) {
-        return {
-          id: receta.id,
-          nombreReceta: receta.nombreReceta,
-          restricciones: receta.restricciones.split(","),
-          minutos: receta.minutos,
-          porciones: receta.porciones
-        };
-      });
     }
   };
 })();
