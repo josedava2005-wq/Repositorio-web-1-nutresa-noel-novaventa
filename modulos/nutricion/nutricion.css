@@ -220,7 +220,6 @@
   display: none;
 }
 
-/* ===== G4-FIL · Filtros por restriccion · inicio ===== */
 .nutricion-filtro-grupo {
   border: 0;
   padding: 0;
@@ -316,7 +315,6 @@
   color: var(--rojo);
   font-weight: 600;
 }
-/* ===== G4-FIL · Filtros por restriccion · fin ===== */
 
 /* Semáforo nutricional */
 .nutricion-semaforo {
