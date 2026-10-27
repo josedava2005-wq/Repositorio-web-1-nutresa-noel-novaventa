@@ -1,12 +1,4 @@
 (function () {
-  /*
-    SERVICIO DE RECETAS POR RESTRICCION
-    - Consulta el listado de recetas en MockAPI.
-    - Convierte el campo "restricciones" (texto separado por comas)
-      en un array para poder filtrar facilmente desde la vista.
-    - Si cambia el endpoint, editar solo FILTROS_RESTRICCION_SERVICIO_CONFIG.
-  */
-
   window.FILTROS_RESTRICCION_SERVICIO_CONFIG = window.FILTROS_RESTRICCION_SERVICIO_CONFIG || {
     baseUrl: "https://6ae0365e8e42963c8d5f177c.mockapi.io",
     ruta: "/recetas-restriccion"
