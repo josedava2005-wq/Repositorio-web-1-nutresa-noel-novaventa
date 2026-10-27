@@ -134,6 +134,33 @@
         <button class="btn btn-secundario Alergeno-btn" data-alergeno="Huevo"> Huevo </button>
       </div>
     </div>
+
+    <!-- ===== G4-FIL · Filtros por restriccion · inicio ===== -->
+    <section class="bloque-modulo nutricion-panel" aria-labelledby="titulo-filtros-restriccion">
+      <h2 id="titulo-filtros-restriccion">Filtrar recetas por restricción</h2>
+      <p class="nutricion-ayuda">
+        Elige una o varias restricciones para filtrar el listado de recetas.
+      </p>
+
+      <fieldset class="nutricion-filtro-grupo">
+        <legend>Restricciones dietéticas</legend>
+        <div class="nutricion-filtros-lista">
+          <button type="button" class="nutricion-filtro-btn" data-filtro="sin_lactosa" aria-pressed="false">
+            Sin lactosa
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="vegetariano" aria-pressed="false">
+            Vegetariano
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="bajo_sodio" aria-pressed="false">
+            Bajo en sodio
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="sin_gluten" aria-pressed="false">
+            Sin gluten
+          </button>
+        </div>
+      </fieldset>
+    </section>
+    <!-- ===== G4-FIL · Filtros por restriccion · fin ===== -->
   </main>
 
   <footer data-layout="footer"></footer>
