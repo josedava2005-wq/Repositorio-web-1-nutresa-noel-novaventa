@@ -219,3 +219,50 @@
 .nutricion-panel .advertencia-alergeno[hidden] {
   display: none;
 }
+
+
+/* Semáforo nutricional */
+.nutricion-semaforo {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--texto);
+}
+
+.nutricion-semaforo-alerta,
+.nutricion-semaforo-ok {
+  margin: 0.5rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--linea);
+  border-left: 6px solid var(--rojo);
+  border-radius: 8px;
+  color: var(--texto);
+  background: var(--crema);
+}
+
+.nutricion-semaforo-ok {
+  border-left-color: var(--verde);
+}
+
+.nutricion-semaforo-titulo {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}
+
+.nutricion-semaforo-detalle {
+  margin: 0;
+}
+
+
+/* Nivel intermedio del semáforo*/
+.nutricion-semaforo-atencion {
+  margin: 0.5rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--linea);
+  border-left: 6px solid rgb(255, 255, 65);
+  border-radius: 8px;
+  color: var(--tinta);
+  background: var(--crema-2);
+}
