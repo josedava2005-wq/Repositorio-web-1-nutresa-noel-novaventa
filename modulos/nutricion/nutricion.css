@@ -220,6 +220,101 @@
   display: none;
 }
 
+.nutricion-filtro-grupo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.nutricion-filtro-grupo legend {
+  padding: 0;
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  color: var(--verde-hondo);
+}
+
+.nutricion-filtros-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+}
+
+.nutricion-filtro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--verde);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--texto);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nutricion-filtro-btn:hover {
+  background: var(--crema-2);
+}
+
+.nutricion-filtro-btn:focus-visible {
+  outline: 2px solid var(--verde-hondo);
+  outline-offset: 2px;
+}
+
+.nutricion-filtro-btn[aria-pressed="true"] {
+  background: var(--verde-hondo);
+  border-color: var(--verde-hondo);
+  color: var(--card);
+}
+
+@media (max-width: 380px) {
+  .nutricion-filtros-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nutricion-filtro-resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.nutricion-filtro-tarjeta {
+  padding: 1rem;
+  border: 1px solid var(--linea);
+  border-left: 5px solid var(--verde);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.nutricion-filtro-tarjeta-nombre {
+  margin: 0;
+  color: var(--tinta);
+  font-size: 1rem;
+}
+
+.nutricion-filtro-tarjeta-detalle {
+  margin: 0.5rem 0 0;
+  color: var(--texto);
+  font-size: 0.9rem;
+}
+
+.nutricion-filtro-vacio {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--rojo);
+  border-left: 5px solid var(--rojo);
+  border-radius: 8px;
+  background: var(--crema);
+  color: var(--rojo);
+  font-weight: 600;
+}
 
 /* Semáforo nutricional */
 .nutricion-semaforo {

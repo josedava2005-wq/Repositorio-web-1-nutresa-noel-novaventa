@@ -143,6 +143,34 @@
         <button class="btn btn-secundario Alergeno-btn" data-alergeno="Huevo"> Huevo </button>
       </div>
     </div>
+
+    <section class="bloque-modulo nutricion-panel" aria-labelledby="titulo-filtros-restriccion">
+      <h2 id="titulo-filtros-restriccion">Filtrar recetas por restricción</h2>
+      <p class="nutricion-ayuda">
+        Elige una o varias restricciones para filtrar el listado de recetas.
+      </p>
+
+      <fieldset class="nutricion-filtro-grupo">
+        <legend>Restricciones dietéticas</legend>
+        <div class="nutricion-filtros-lista">
+          <button type="button" class="nutricion-filtro-btn" data-filtro="sin_lactosa" aria-pressed="false">
+            Sin lactosa
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="vegetariano" aria-pressed="false">
+            Vegetariano
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="bajo_sodio" aria-pressed="false">
+            Bajo en sodio
+          </button>
+          <button type="button" class="nutricion-filtro-btn" data-filtro="sin_gluten" aria-pressed="false">
+            Sin gluten
+          </button>
+        </div>
+      </fieldset>
+
+      <div id="estadoFiltrosRestriccion" class="mensaje-estado" role="status" aria-live="polite"></div>
+      <div id="resultadoFiltrosRestriccion" class="nutricion-filtro-resultados" aria-live="polite"></div>
+    </section>
   </main>
 
   <footer data-layout="footer"></footer>
@@ -158,5 +186,7 @@
   <script src="servicio.js"></script>
   <script src="infoNutricion.js"></script>
   <script src="restricciones.js"></script>
+  <script src="filtrosRestriccion.servicio.js"></script>
+  <script src="filtrosRestriccion.js"></script>
 </body>
 </html>
