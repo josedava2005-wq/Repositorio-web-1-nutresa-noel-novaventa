@@ -44,7 +44,8 @@
     objetivosNutricionales: [
       { id: 1, descripcion: "Bajar porcentaje de grasa corporal.", metaCalorias: 1950, fechaInicio: "2026-10-10", fechaFin: "2026-12-10", idPerfilAlimentario: 1 },
       { id: 2, descripcion: "Aumentar masa muscular.", metaCalorias: 2500, fechaInicio: "2026-10-12", fechaFin: "2026-12-30", idPerfilAlimentario: 2 }
-    ]
+    ],
+    consumosDiarios: []
   };
 
   var planificadorMockData = {

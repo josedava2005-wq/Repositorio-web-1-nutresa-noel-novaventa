@@ -26,6 +26,40 @@
 .nutricion-panel {
   margin-bottom: 2rem;
 }
+.nutricion-meta-resumen {
+  margin-bottom: 1.25rem;
+  border-left: 5px solid #3d8e33;
+  background: #f9f9f2;
+}
+.nutricion-meta-resumen-titulo {
+  margin-top: 0;
+  color: #114622;
+  font-family: "Poppins", sans-serif;
+}
+.nutricion-meta-resumen-valores {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  color: #215b33;
+}
+.nutricion-meta-resumen-valores strong {
+  color: #114622;
+  font-size: 1.15rem;
+}
+.nutricion-meta-resumen-mensaje,
+.nutricion-meta-resumen-nota {
+  margin: 0.35rem 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+.nutricion-meta-resumen-nota {
+  font-size: 0.8rem;
+}
+.nutricion-meta-resumen[data-estado="error"] {
+  border-left-color: #a33;
+}
 .nutricion-panel h2 {
   color: #215b33;
   font-family: "Poppins", sans-serif;

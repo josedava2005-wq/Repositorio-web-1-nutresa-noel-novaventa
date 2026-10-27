@@ -338,6 +338,34 @@
       </section>
 
       <section
+        class="bloque-modulo nutricion-meta-resumen"
+        aria-labelledby="nutricion-meta-resumen-titulo"
+        aria-live="polite"
+        data-estado="cargando"
+      >
+        <h2
+          class="nutricion-meta-resumen-titulo"
+          id="nutricion-meta-resumen-titulo"
+        >
+          Resumen diario
+        </h2>
+        <p class="nutricion-meta-resumen-valores">
+          <span>Meta diaria:</span>
+          <strong data-meta-diaria>Cargando…</strong>
+          <span aria-hidden="true"> · </span>
+          <span>Consumido hoy:</span>
+          <strong data-consumido-hoy>Cargando…</strong>
+        </p>
+        <p class="nutricion-meta-resumen-mensaje" data-mensaje>
+          Consultando el resumen diario…
+        </p>
+        <p class="nutricion-meta-resumen-nota">
+          Datos locales de demostración. El consumo se muestra cuando hay
+          registros para hoy.
+        </p>
+      </section>
+
+      <section
         class="bloque-modulo nutricion-panel"
         aria-labelledby="titulo-plato"
       >
@@ -416,6 +444,7 @@
     <script src="../../assets/js/layout.js"></script>
     <script src="../../data/platos.js"></script>
     <script src="servicio.js"></script>
+    <script src="metaResumen.js"></script>
     <script src="infoNutricion.js"></script>
   </body>
 </html>
