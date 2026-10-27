@@ -277,4 +277,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+.nutricion-filtro-resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.nutricion-filtro-tarjeta {
+  padding: 1rem;
+  border: 1px solid var(--linea);
+  border-left: 5px solid var(--verde);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.nutricion-filtro-tarjeta-nombre {
+  margin: 0;
+  color: var(--tinta);
+  font-size: 1rem;
+}
+
+.nutricion-filtro-tarjeta-detalle {
+  margin: 0.5rem 0 0;
+  color: var(--texto);
+  font-size: 0.9rem;
+}
+
+.nutricion-filtro-vacio {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--rojo);
+  border-left: 5px solid var(--rojo);
+  border-radius: 8px;
+  background: var(--crema);
+  color: var(--rojo);
+  font-weight: 600;
+}
 /* ===== G4-FIL · Filtros por restriccion · fin ===== */
